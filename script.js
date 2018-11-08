@@ -12,7 +12,7 @@ var findMin = function(nums) {
     }
     let mid = len % 2 === 0 ? len / 2 - 1 : Math.floor(len / 2);
     if (nums[mid] > nums[mid + 1]) {
-        return nums[mid + 1] + '';
+        return nums[mid + 1];
     }
     if (nums[mid - 1] > nums[mid]) {
         return nums[mid];
